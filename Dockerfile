@@ -8,5 +8,5 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
-EXPOSE 443
+EXPOSE 80
 CMD ["/bin/sh", "/start.sh"]
